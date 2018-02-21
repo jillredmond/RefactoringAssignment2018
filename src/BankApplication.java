@@ -1,4 +1,4 @@
-
+//Assignment
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -124,7 +124,7 @@ public class BankApplication extends JFrame {
 		JPanel buttonPanel = new JPanel(new GridLayout(1, 4));
 
 		nextItemButton = new JButton(new ImageIcon("next.png"));
-		prevItemButton = new JButton(new ImageIcon("previous.png"));
+		prevItemButton = new JButton(new ImageIcon("prev.png")); //Refactor 
 		firstItemButton = new JButton(new ImageIcon("first.png"));
 		lastItemButton = new JButton(new ImageIcon("last.png"));
 		
@@ -261,10 +261,11 @@ public class BankApplication extends JFrame {
 						keyList.add(i);
 				}
 				
+				if (keyList.isEmpty()==false) { //refactor
 				int maxKey = Collections.max(keyList);
-		
+				
 				saveOpenValues();	
-		
+				
 					if(currentItem<maxKey){
 						currentItem++;
 						while(!table.containsKey(currentItem)){
@@ -272,6 +273,7 @@ public class BankApplication extends JFrame {
 						}
 					}
 					displayDetails(currentItem);			
+			}
 			}
 		};
 		
