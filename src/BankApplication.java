@@ -261,7 +261,7 @@ public class BankApplication extends JFrame {
 						keyList.add(i);
 				}
 				
-				if (keyList.isEmpty()==false) { //refactor
+				if (keyList.isEmpty()==false) { 
 				int maxKey = Collections.max(keyList);
 				
 				saveOpenValues();	
@@ -291,6 +291,7 @@ public class BankApplication extends JFrame {
 						keyList.add(i);
 				}
 				
+				if (keyList.isEmpty()==false) { 
 				int minKey = Collections.min(keyList);
 				//System.out.println(minKey);
 				
@@ -302,6 +303,7 @@ public class BankApplication extends JFrame {
 					}
 				}
 				displayDetails(currentItem);				
+			}
 			}
 		};
 	
