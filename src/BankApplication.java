@@ -342,10 +342,13 @@ public class BankApplication extends JFrame {
 							
 
 							currentItem=0;
+							if(!table.isEmpty()) {
 							while(!table.containsKey(currentItem)){
 								currentItem++;
 							}
+							
 							displayDetails(currentItem);
+							}
 							
 			}
 		});
